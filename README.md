@@ -96,13 +96,12 @@ See `lib/figma-examples.ts` for more patterns.
 
 ## 🌐 Deployment (GitHub Pages)
 
-1. The app is configured for static export via `next.config.ts` (`output: "export").
+1. The app is configured for static export via `next.config.ts` (`output: "export"`).
 
 1. Build and preview locally:
 
    ```bash
    pnpm run build
-   pnpm run export
    npx serve out
    ```
 

@@ -43,9 +43,6 @@ jobs:
         env:
           NEXT_TELEMETRY_DISABLED: "1"
 
-      - name: Export static site
-        run: pnpm run export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
