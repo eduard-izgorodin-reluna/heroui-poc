@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "sync-figma": "tsx scripts/sync-figma.ts",
     "figma:connect": "figma connect create --skip-update-check",
     "figma:publish": "figma connect publish --skip-update-check"

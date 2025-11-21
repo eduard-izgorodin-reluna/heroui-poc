@@ -18,7 +18,7 @@ AI-optimized component library achieving **9/10 code generation quality** throug
 pnpm install
 
 # Configure Figma (optional - see FIGMA_SETUP.md)
-cp .env.local.example .env.local
+cp .env.example .env.local
 # Add your FIGMA_ACCESS_TOKEN
 
 # Run development server
@@ -93,6 +93,22 @@ const styles = await figma.getStyles();
 ```
 
 See `lib/figma-examples.ts` for more patterns.
+
+## 🌐 Deployment (GitHub Pages)
+
+1. The app is configured for static export via `next.config.ts` (`output: "export").
+
+1. Build and preview locally:
+
+   ```bash
+   pnpm run build
+   pnpm run export
+   npx serve out
+   ```
+
+1. `.github/workflows/deploy.yml` builds and deploys to GitHub Pages on each push to `main`.
+
+1. After the first successful workflow run, enable **Settings → Pages → Source: GitHub Actions** so the site is available at `https://<username>.github.io/heroui-poc/`.
 
 ## 🎨 Design System
 
