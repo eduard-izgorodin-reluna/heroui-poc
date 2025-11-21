@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "heroui-react": {
+      "command": "npx",
+      "args": ["-y", "@heroui/react-mcp@latest"]
+    },
+    "figma": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-figma"]
+    }
+  }
+}
