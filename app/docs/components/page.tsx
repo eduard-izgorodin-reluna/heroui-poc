@@ -135,10 +135,10 @@ export default function ComponentsShowcase() {
               <RelunaButton color="primary" isLoading>
                 Loading...
               </RelunaButton>
-              <RelunaButton color="primary" startContent={<Mail className="w-4 h-4" />}>
+              <RelunaButton color="primary" startIcon={<Mail className="w-4 h-4" />}>
                 With Icon
               </RelunaButton>
-              <RelunaButton color="primary" endContent={<Share2 className="w-4 h-4" />}>
+              <RelunaButton color="primary" endIcon={<Share2 className="w-4 h-4" />}>
                 Icon Right
               </RelunaButton>
             </div>
