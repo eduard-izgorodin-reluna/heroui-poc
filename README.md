@@ -2,6 +2,8 @@
 
 **Production-ready showcase with Figma integration, MCP server, and tailwind-variants.**
 
+🌐 **[Live Demo on GitHub Pages](https://eduard-izgorodin-reluna.github.io/heroui-poc/)**
+
 ## 🎯 What's This?
 
 AI-optimized component library achieving **9/10 code generation quality** through:
