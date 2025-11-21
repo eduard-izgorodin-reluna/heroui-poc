@@ -9,6 +9,9 @@ import { RelunaButton } from "@/components/reluna-button";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Components", href: "/docs/components" },
+  { name: "Showcase", href: "/showcase-complete" },
+  { name: "Sign In Demo", href: "/signin-demo" },
+  { name: "Builder.io", href: "/signin-builder" },
 ];
 
 export function Navigation() {
@@ -46,7 +49,7 @@ export function Navigation() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
                     isActive
                       ? "bg-primary/10 text-primary"
                       : "text-foreground-600 hover:text-primary hover:bg-primary/5"
@@ -65,30 +68,10 @@ export function Navigation() {
             <RelunaButton
               variant="ghost"
               size="sm"
-              onClick={() => window.open("https://github.com/reluna/heroui-poc", "_blank")}
+              onClick={() => window.open("https://github.com/eduard-izgorodin-reluna/heroui-poc", "_blank")}
               aria-label="GitHub Repository"
             >
               <Github className="w-5 h-5" />
-            </RelunaButton>
-
-            <RelunaButton
-              color="secondary"
-              variant="bordered"
-              size="sm"
-              onClick={() => router.push("/signin-builder")}
-              className="hidden sm:flex"
-            >
-              AI Sign In
-            </RelunaButton>
-
-            <RelunaButton
-              color="primary"
-              variant="solid"
-              size="sm"
-              onClick={() => window.location.href = "/showcase-complete"}
-              className="hidden sm:flex"
-            >
-              Get Started
             </RelunaButton>
           </div>
         </div>
