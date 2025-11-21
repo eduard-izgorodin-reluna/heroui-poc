@@ -17,6 +17,9 @@ interface BuilderPageProps {
   };
 }
 
+// Dynamic route configuration for static export
+export const dynamicParams = true;
+
 export default function Page(props: BuilderPageProps) {
   const isPreviewing = useIsPreviewing();
   const [builderContent, setBuilderContent] = React.useState<any>(null);

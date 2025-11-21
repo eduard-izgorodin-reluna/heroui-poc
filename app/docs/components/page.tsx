@@ -222,7 +222,7 @@ export default function ComponentsShowcase() {
               <RelunaInput
                 label="Error State"
                 placeholder="Enter email"
-                isInvalid
+                state="error"
                 errorMessage="Email is required"
               />
             </div>

@@ -21,7 +21,10 @@ figma.connect(
         Underlined: 'underlined',
       }),
       disabled: figma.boolean('Disabled'),
-      isInvalid: figma.boolean('Error State'),
+      state: figma.enum('State', {
+        Default: undefined,
+        Error: 'error',
+      }),
       label: figma.string('Label'),
       placeholder: figma.string('Placeholder'),
       helperText: figma.string('Helper Text'),
@@ -32,7 +35,7 @@ figma.connect(
         size={props.size}
         variant={props.variant}
         disabled={props.disabled}
-        isInvalid={props.isInvalid}
+        state={props.state}
         label={props.label}
         placeholder={props.placeholder}
         helperText={props.helperText}

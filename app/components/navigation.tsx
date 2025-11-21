@@ -11,7 +11,7 @@ const navigation = [
   { name: "Components", href: "/docs/components" },
   { name: "Showcase", href: "/showcase-complete" },
   { name: "Sign In Demo", href: "/signin-demo" },
-  { name: "Builder.io", href: "/signin-builder" },
+  { name: "Sign In Gen", href: "/signin-gen" },
 ];
 
 export function Navigation() {
